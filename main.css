@@ -1,0 +1,19 @@
+.main-block {
+  width: 80%;
+  margin: 0px auto;
+  background-color: #f00;
+  color: #000;
+}
+.menu {
+  display: block;
+  width: 100%;
+  border: solid #808080 1px;
+  margin: 5px auto;
+}
+.menu_item {
+  display: inline-block;
+  padding: 2px;
+  margin: 0px auto;
+  font-weight: bold;
+  text-align: center;
+}
