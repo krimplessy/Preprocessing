@@ -1,19 +1,187 @@
+body {
+  background-color: #164b69;
+  font-size: 16px;
+  font-family: Arial;
+}
 .main-block {
   width: 80%;
-  margin: 0px auto;
-  background-color: #f00;
+  margin: 40px auto;
+  padding: 10px 30px;
+  background-color: #e3e3e3;
   color: #000;
 }
 .menu {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   width: 100%;
-  border: solid #808080 1px;
-  margin: 5px auto;
+  padding: 10px 0px;
 }
 .menu_item {
-  display: inline-block;
-  padding: 2px;
-  margin: 0px auto;
+  width: 16%;
+  padding: 10px;
   font-weight: bold;
   text-align: center;
+}
+.menu_item:hover {
+  background-color: #dcdcdc;
+}
+.page {
+  background-color: #dcdcdc;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: #00bfff;
+}
+p {
+  text-indent: 30px;
+  text-align: justify;
+  line-height: 2em;
+  word-spacing: 1.5em;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .main-block {
+    width: 90%;
+  }
+  .menu {
+    flex-wrap: wrap;
+  }
+  .menu_item {
+    width: 50%;
+  }
+}
+.CSS .block1 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.CSS .block1 img {
+  float: right;
+  margin: 0px 10px 10px 10px;
+}
+.CSS .block2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px;
+}
+.CSS .block2 video {
+  width: 40%;
+}
+@media (max-width: 600px) {
+  .CSS .block1 {
+    text-align: center;
+    flex-direction: column;
+  }
+  .CSS .block1-item2 img {
+    float: none;
+    width: 90%;
+    padding: 15px;
+  }
+  .CSS .block2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .CSS .block2 video {
+    width: 85%;
+  }
+}
+.Shrift .block1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  margin: 15px 0px;
+}
+.Shrift .block1-item {
+  width: 33.33%;
+}
+.Shrift img {
+  width: 90%;
+}
+.Shrift .block2 {
+  padding: 10px;
+}
+.Shrift .block3 {
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  .Shrift .block1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Shrift .block1-item {
+    width: 100%;
+    padding: 10px;
+  }
+}
+.Block .block1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  margin: 15px 0px;
+}
+.Block .block1-item {
+  width: 25%;
+}
+.Block img {
+  width: 95%;
+}
+.Block ul {
+  text-indent: 10px;
+  text-align: justify;
+  line-height: 2em;
+  word-spacing: 1.5em;
+}
+.Block .block2 {
+  display: block;
+  width: 100%;
+  margin: 15px 0px;
+  overflow: hidden;
+}
+.Block .block2-item1 {
+  display: inline-block;
+  width: 50%;
+  float: left;
+  padding: 30px 30px 10px 30px;
+}
+.Block .block2-item2 {
+  display: inline-block;
+  width: 50%;
+  padding: 30px 30px 10px 30px;
+}
+.Block .block3 {
+  display: block;
+  width: 100%;
+  padding: 0px 20px;
+}
+@media (max-width: 600px) {
+  .Block .block1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Block .block1-item {
+    width: 100%;
+    padding: 10px;
+  }
+  .Block .block2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .Block .block2-item1 {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  .Block .block2-item2 {
+    width: 100%;
+    padding: 10px 20px;
+  }
 }
